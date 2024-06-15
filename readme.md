@@ -25,7 +25,7 @@ The choice of a transformer model equipped with positional encodings and multi-h
 
 This architecture ensures that the embeddings generated are contextually enriched, making them suitable for further tasks such as sentiment analysis, recommendation systems, or trend analysis based on user reviews.
 
-The code for the above task is present in ___
+The code for the above task is present in [_task 1_](https://github.com/i-am-pluto/ml-apprantenceship-assignment/blob/main/transformerToEmbeddings.ipynb)
 ---
 
 # Task 2: Multi-Task Learning Expansion for Sentence Transformer
@@ -49,7 +49,7 @@ The updated model architecture includes task-specific classification layers on t
    - **Rationale:** Before passing the output to the classifiers, applying a mean pooling reduces the sequence of vectors to a single vector that captures the essence of the input across all positions. This is particularly useful for classification tasks, as it distills the entire input into a format suitable for making a single prediction per input.
    - **Advantages:** Mean pooling simplifies the output while retaining critical information, making it easier for the classifiers to perform effectively. It ensures that all parts of the input contribute to the final decision, enhancing the model's ability to understand and utilize the full context of the input.
 
-the code for this task is present in ___
+the code for this task is present in [_task 2_](https://github.com/i-am-pluto/ml-apprantenceship-assignment/blob/main/MultiTaskLearning.ipynb)
 ---
 
 # Task 3: Training Considerations and Transfer Learning Strategy
@@ -115,7 +115,7 @@ Implementing layer-wise learning rates in training deep neural networks is a sop
    - **Prevents Overfitting:** Lower rates in foundational layers help prevent overfitting by ensuring that these layers, which are responsible for capturing universal features, do not change too rapidly. This stability is crucial when the model is applied across multiple tasks that might pull the foundational layers in different directions.
    - **Encourages Task-specific Fine-tuning:** Higher rates in the task-specific layers encourage these layers to fine-tune aggressively to their respective tasks, making the model more responsive to task-specific signals without affecting the shared layers.
 
-The code for the task is present in __
+The code for the task is present in [ task 4 ](https://github.com/i-am-pluto/ml-apprantenceship-assignment/blob/main/MultiTaskLearning.ipynb)
 
 ---
 
